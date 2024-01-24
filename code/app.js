@@ -2,7 +2,7 @@ const express = require("express");
 const redis = require("redis");
 
 const app = express();
-const port = 5001;
+const port = 5000;
 
 const client = redis.createClient({
   url: "redis://redis:6379",

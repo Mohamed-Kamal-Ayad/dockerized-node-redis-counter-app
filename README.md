@@ -16,8 +16,8 @@ Before getting started, ensure that you have the following installed on your sys
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/your-username/your-repository.git
-    cd your-repository
+    git clone https://github.com/Mohamed-Kamal-Ayad/dockerized-node-redis-counter-app
+    cd dockerized-node-redis-counter-app
     ```
 
 2. Start the Docker containers:

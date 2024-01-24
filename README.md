@@ -20,13 +20,7 @@ Before getting started, ensure that you have the following installed on your sys
     cd your-repository
     ```
 
-2. Build the Docker images:
-
-    ```bash
-    docker-compose build
-    ```
-
-3. Start the Docker containers:
+2. Start the Docker containers:
 
     ```bash
     docker-compose up -d
@@ -34,7 +28,7 @@ Before getting started, ensure that you have the following installed on your sys
 
    This will launch the Node.js app and Redis in separate containers.
 
-4. Access the application:
+3. Access the application:
 
    Open your browser and go to [http://localhost:5000](http://localhost:5000) to interact with the Node.js app.
 

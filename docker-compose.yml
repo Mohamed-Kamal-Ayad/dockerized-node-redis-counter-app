@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  web-fe:
+    build: .
+    command: node app.js
+    ports:
+      - target: 5000
+        published: 5000
+    networks:
+      - frontend-net
+      - backend-net
+    volumes:
+      - type: volume
+        source: counter-vol
+        target: /code
+  redis:
+    image: "redis:alpine"
+    networks:
+      backend-net:
+
+networks:
+  frontend-net:
+  backend-net:
+    internal: true
+
+volumes:
+  counter-vol:
